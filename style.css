@@ -1,0 +1,435 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Merienda:regular,700);
+* {
+  /*corregido por profe*/
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "poppins", sans-serif;
+  color: red; /*color para las letras de las imagenes de los productos*/
+}
+/*corregido por profe*/
+a {
+  text-decoration: none;
+}
+header,
+section {
+  padding: 100px 0;
+}
+.box-center {
+  width: 80%;
+  margin: auto;
+}
+h1.tprincipal {
+  font-family: "Merienda";
+  color: #ffffe0;
+  font-size: 12vmin;
+  font-weight: bold;
+}
+h1 {
+  color: #d3d3d3;
+  font-size: 10vmin;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2.tsecundario {
+  font-size: 4vmin;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 6px;
+  font-weight: 400;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #222;
+}
+h4 {
+  color: #444;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.text-solid1 {
+  color: #222222;
+}
+.text-solid2 {
+  color: #444444;
+}
+.text-solid3 {
+  color: #666666;
+}
+.text-solid4 {
+  color: #888888; /*color de letra para el texto de nosotros*/
+}
+.text-solid5 {
+  color: #aaaaaa;
+}
+.text-solid6 {
+  color: #cccccc;
+}
+.text-solid7 {
+  color: #eeeeee;
+}
+.text-solid8 {
+  color: white;
+}
+/*color para el contacto*/
+.bg-solid1 {
+  background: #ffb6c1;
+}
+.bg-solid2 {
+  background: #444444;
+}
+.bg-solid3 {
+  background: #666666;
+}
+.bg-solid4 {
+  background: #888888;
+}
+.bg-solid5 {
+  background: #aaaaaa;
+}
+.bg-solid6 {
+  background: #cccccc;
+}
+.bg-solid7 {
+  background: #eeeeee;
+}
+.bg-solid8 {
+  background: white;
+}
+.text-primario {
+  color: #ff69b4; /* Código de color rosita para los ultimos, pie de imagen*/
+}
+.text-center {
+  text-align: center;
+}
+.text-lite {
+  font-family: "Merienda";
+}
+.border {
+  border: 1px;
+}
+.rounded {
+  border-radius: 5px;
+}
+.rounded-semi {
+  border-radius: 20px;
+}
+.rounded-full {
+  border-radius: 50%;
+}
+.line-space {
+  line-height: 40px;
+}
+.margin-bottom {
+  margin-bottom: 30px;
+}
+.margin-top {
+  margin-top: 30px;
+}
+.marginy {
+  margin: 30px 0;
+}
+.marginx {
+  margin: 0 30px;
+}
+@media screen and (max-width: 1100px) {
+  .about__container .content {
+    order: 1;
+    flex: 0 0 100% !important;
+    margin: 20px 0px;
+  }
+  .about__container .container_image {
+    order: 0;
+    flex: 0 0 100% !important;
+    margin: 20px 0px;
+  }
+  .icons {
+    width: 100% !important;
+  }
+  .footer__container {
+    grid-template-columns: 1fr !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 790px) {
+  .card1,
+  .card2,
+  .card3 {
+    width: 45% !important;
+  }
+  .footer__container {
+    grid-template-columns: 1fr !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 550px) {
+  .card1,
+  .card2,
+  .card3 {
+    width: 100% !important;
+  }
+  .footer__container {
+    grid-template-columns: 1fr !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .line-space {
+    font-size: 12px;
+    line-height: 30px;
+  }
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  background: #ffb6c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+nav a {
+  color: #222;
+  padding: 0 20px;
+  transition: all 0.3s;
+}
+nav a:hover {
+  color: #ff69b4;
+}
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 600px; /*cambio*/
+  background: url(Img/fondo1.png);
+  background-size: cover;
+}
+.header * {
+  position: relative;
+}
+.about__container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: space-between; /* Espacia el contenido y la imagen */
+  flex-flow: row wrap; /*agregado*/
+}
+.about__container .content {
+  /*agregado*/
+  flex: 0 0 50%;
+}
+.about__container .container_image {
+  /*agregado*/
+  position: relative;
+  flex: 0 0 400px;
+}
+.about__container .container_image img {
+  /*agregado*/
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+}
+.text_primario {
+  color: #ff69b4; /* Código de color rosita */
+}
+.content {
+  flex: 1; /* Ocupa el espacio disponible */
+}
+
+.container_image {
+  flex: 0 0 350px; /* tamaño fijo para la imagen */
+  text-align: right; /* Alinea la imagen a la derecha */
+}
+
+.image img {
+  width: 100%; /*  imagen ocupe el contenedor */
+  height: auto;
+  border-radius: 8px; /*bordes redondeados */
+}
+
+.icons {
+  display: flex; /* Alinea los íconos en fila */
+  justify-content: center; /* Centra los íconos horizontalmente */
+  margin-top: 20px; /* Espacio arriba de los íconos */
+  flex-flow: row nowrap;
+}
+
+.icons a {
+  display: flex; /* Para centrar el icono */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  width: 70px; /* Ancho del icono */
+  height: 70px; /* Alto del icono */
+  border-radius: 50%; /* Hace los iconos redondos */
+  background-color: #f0f0f0; /* Color de fondo */
+  margin: 0 30px; /* Espacio entre iconos */
+  transition: 0.5s; /* Transición al pasar el mouse */
+}
+
+.icons a:hover {
+  background-color: #ffb6c1; /* Cambia el fondo al pasar el mouse */
+  color: white; /* Cambia el color del icono al pasar el mouse */
+}
+
+.icons a span {
+  font-size: 24px; /* Ajusta el tamaño del ícono */
+  color: #ff69b4; /* Color de los íconos */
+}
+
+.card1:nth-child(1) {
+  background: url(Img/jamon.png);
+}
+.card1:nth-child(2) {
+  background: url(Img/hotkeis.png);
+}
+.card1:nth-child(3) {
+  background: url(Img/cafe_cortado.png);
+}
+.card1:nth-child(4) {
+  background: url(Img/dona.png);
+}
+.card1 {
+  width: 30%;
+  height: 400px;
+  margin-bottom: 30px;
+  background-size: cover !important;
+  background-position: center !important;
+  cursor: default;
+}
+.mejores__container {
+  display: flex;
+  display: flex;
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+/*tipos de bebidas*/
+.card2:nth-child(1) {
+  background: url(Img/lavanda.png);
+}
+.card2:nth-child(2) {
+  background: url(Img/frio.png);
+}
+.card2:nth-child(3) {
+  background: url(Img/cafe1.png);
+}
+.card2:nth-child(4) {
+  background: url(Img/mango.png);
+}
+.card2:nth-child(5) {
+  background: url(Img/vainilla.png);
+}
+.card2 {
+  width: 30%;
+  height: 400px;
+  margin-bottom: 30px;
+  background-size: cover !important;
+  background-position: center !important;
+  cursor: default;
+}
+.menu__container {
+  display: flex;
+  justify-content: space-between; /*agragado*/
+  align-items: center; /*agragado*/
+  flex-flow: row wrap; /*agragado*/
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+/*botones*/
+.card-container {
+  /*clase de los tipos de bebidas, postres y mejores*/
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  justify-content: space-between; /* Espacia los elementos */
+  height: 100%; /* Asegura que ocupe todo el alto de la tarjeta */
+}
+.btn-primary {
+  /*clase de los botones*/
+  margin-top: 20px auto 0; /* Empuja el botón hacia el fondo de la tarjeta */
+  background-color: #ff69b4; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.btn-primary:hover {
+  background-color: #ffb6c1; /* Color al pasar el mouse */
+}
+/*Are de postres*/
+.card3:nth-child(1) {
+  background: url(Img/man.png);
+}
+.card3:nth-child(2) {
+  background: url(Img/dona.png);
+}
+.card3:nth-child(3) {
+  background: url(Img/hotkeis.png);
+}
+.card3:nth-child(4) {
+  background: url(Img/jamon.png);
+}
+.card3:nth-child(5) {
+  background: url(Img/pastel.png);
+}
+.card3 {
+  width: 30%;
+  height: 400px;
+  margin-bottom: 30px;
+  background-size: cover !important;
+  background-position: center !important;
+  cursor: default;
+}
+.menu2__container {
+  display: flex;
+  display: flex;
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 50px 0;
+  color: #fff;
+}
+.footer__container .info .icons {
+  width: 60%;
+}
+.footer__container .info .icons a {
+  width: 50px;
+  height: 50px;
+}
+.footer__container .contact .icons {
+  width: 40%;
+}
+.footer__container .contact .icons a {
+  width: 50px;
+  height: 50px;
+}
+.footer__container .contact .icons a {
+  background: transparent;
+}
+.footer__container .contact .icons a:hover {
+  background: transparent;
+}

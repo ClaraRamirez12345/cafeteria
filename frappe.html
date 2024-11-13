@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      h2 {
+        text-align: center;
+      }
+      header {
+        background: #333;
+        color: #333;
+        padding: 10px 0;
+        background-color: #f4f4f4;
+      }
+      nav {
+        margin: 20px 0;
+      }
+      nav a {
+        margin: 0 15px;
+        color: #fff;
+        text-decoration: none;
+      }
+      .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+      .producto {
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 15px;
+        width: 200px;
+        text-align: center;
+      }
+      .producto img {
+        height: 200px; /* Ajusta la altura deseada */
+        width: auto; /* El ancho se ajustará automáticamente para mantener la proporción */
+        object-fit: cover;
+      }
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background: #333;
+        color: #fff;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      form {
+        margin: 20px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+      }
+      button {
+        background-color: #ff69b4;
+        color: white;
+        border: none;
+        padding: 10px 20px; /* Espaciado interno */
+        text-align: center; /* Centrar texto */
+        text-decoration: none; /* Eliminar subrayado */
+        display: inline-block; /* Mostrar como un elemento en línea */
+        font-size: 16px; /* Tamaño de fuente */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambio de cursor cuando pasa sobre el botón */
+        transition: background-color 0.3s ease; /* Transición suave */
+      }
+
+      /* Efecto cuando el cursor pasa sobre el botón */
+      button:hover {
+        background-color: #ffb6c1; /* Cambiar el color de fondo al pasar el mouse */
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <section id="productos">
+      <h2>Frappes</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="Img/frappercafe.png" alt="" />
+          <h3>Frape de cafe</h3>
+          <p>Precio: $45 MXN</p>
+          <button>Comprar</button>
+        </div>
+        <div class="producto">
+          <img src="Img/vainilla.png" alt="" />
+          <h3>Frappe de vainilla</h3>
+          <p>Precio: $60 MXN</p>
+          <button>Comprar</button>
+        </div>
+        <div class="producto">
+          <img src="Img/faavellana.png" alt="" />
+          <h3>Frappe de cafe con avellana</h3>
+          <p>Precio: $60 MXN</p>
+          <button>Comprar</button>
+        </div>
+        <div class="producto">
+          <img src="Img/oreo.png" alt="" />
+          <h3>Freppe de Galleta oreo</h3>
+          <p>Precio: $60 MXN</p>
+          <button>Comprar</button>
+        </div>
+        <div class="producto">
+          <img src="Img/gansito.png" alt="" />
+          <h3>Frappe de Gansito</h3>
+          <p>Precio: $60 MXN</p>
+          <button>Comprar</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
